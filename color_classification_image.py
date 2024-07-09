@@ -10,11 +10,11 @@ import sys
 try:
     source_image = cv2.imread(sys.argv[1])
 except:
-    source_image = cv2.imread("C:/Users/karun/OneDrive/Desktop/Folder1/TestDataset/image1.jpg")
+    source_image = cv2.imread("C:/Desktop/Folder1/TestDataset/image1.jpg")
 prediction = 'n.a.'
 
 # checking whether the training data is ready
-PATH = " C:/Users/karun/OneDrive/Desktop/Folder1/TRAIN"
+PATH = " C:/Desktop/Folder1/TRAIN"
 
 if os.path.isfile(PATH) and os.access(PATH, os.R_OK):
     print ('training data is ready, classifier is loading...')
